@@ -19,7 +19,7 @@
 </head>
 
 <body>
-
+    <!--JUMBOTRONE HEADER-->
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
@@ -30,15 +30,18 @@
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
                 </div>
+                <!--RESERVE CAMPSITE button-->
                 <div class="col-12 col-sm col-md-4 col-xl-2 mt-4">
-                    <a class="btn btn-info btn-lg" href="#reserveForm">
-                       Reserve Campsite 
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info" data-toggle="tooltip" 
+                       data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">
+                       Reserve Campsite
                     </a>
                 </div>
             </div>        
         </div>
     </header>
 
+    <!--NAVIGATION BAR-->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
@@ -58,6 +61,7 @@
 
     <div class="container">
 
+        <!--DISCOVER AND REVIEW (our campsites)-->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Discover & Review</h2>
@@ -71,16 +75,15 @@
                         <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
                     </div>
                 </div>
-            </div>
-            
+            </div>   
         </div>
 
+        <!--FEATURED CAMPSITES row-->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 col-md-3">
                 <h2>Featured Campsites</h2>
             </div>
 
-            
             <div class="col">
                 <div class="media">
                     <div class="media-body align-self-center">
@@ -89,10 +92,10 @@
                     </div>
                     <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" alt="React Lake" />
                 </div>
-            </div>
-            
+            </div>   
         </div>
 
+        <!--OUR COMMUNITY PARTNERS row-->
         <div class="row row-content align-items-center">
             <div class="col-sm-4 order-sm-last col-md-3">
                 <h2 class="text-sm-right">Our Community Partners</h2>
@@ -109,6 +112,7 @@
             </div>
         </div>
 
+        <!--RESERVE A CAMPSITE form-->
         <div class="row row-content">
             <div class="col-sm-6 mx-auto">
                 <div class="card">
@@ -149,8 +153,10 @@
                 </div>
             </div>
         </div>
+
     </div>
 
+    <!--FOOTER-->
     <footer class="site-footer>
         <div class="container">
             <div class="row">
@@ -163,6 +169,7 @@
                         <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
+                <!--SOCIAL LINK icons-->
                 <div class="col-6 col-sm-5 text-center">
                    <h5>Social</h5>
                     <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
@@ -183,6 +190,12 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 
 </body>
 
